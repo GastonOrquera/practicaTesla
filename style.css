@@ -109,6 +109,99 @@ header nav ul li a .bi-chevron-compact-right {
     display: none;
 }
 
+/* MAIN */
+
+main {
+    padding: .8rem 2.4rem;
+    /* background-color: rgba(0, 0, 255, 0.199); */
+
+    position: absolute;
+    margin: 2.8rem 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+main .titles {
+    text-align: center;
+    font-family: var(--fontTitulosParrafos);
+    color: rgba(255, 255, 255, 0.89);
+    font-size: 2.2rem;
+}
+
+main .p {
+    text-align: center;
+    font-family: var(--fontTitulosParrafos);
+    color: rgba(255, 255, 255, 0.89);
+    font-weight: 400;
+}
+
+main .pS {
+    text-align: center;
+    font-family: var(--fontTitulosParrafos);
+    color: rgba(255, 255, 255, 0.89);
+    margin-top: .4rem;
+    font-size: .6rem;
+}
+
+main .conteinerBtns {
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 1rem;
+    height: 70%;
+}
+
+main .conteinerBtns a {
+    text-decoration: none;
+
+    font-family: var(--fontTitulosParrafos);
+    padding: .5rem 2rem;
+    width: 13.6rem;
+    text-align: center;
+    border-radius: 4px;
+}
+
+main .conteinerBtns .btnShop {
+    background-color: #E1DAD9;
+    color: rgb(22, 19, 14);
+    font-weight: 200;
+    font-size: .8rem;
+}
+
+main .conteinerBtns .btnDrive {
+    color: rgba(255, 255, 255, 0.89);
+    backdrop-filter: blur(var(--filter));
+    -webkit-backdrop-filter: blur(var(--filter));
+    font-size: .8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
 @media only screen and (max-width: 1000px) {
 
 
@@ -225,4 +318,21 @@ header nav ul li a .bi-chevron-compact-right {
     header nav ul li a .bi-chevron-compact-right {
         display: flex;
     }
+
+
+
+    /* MAIN */
+
+    main {
+        z-index: 98;
+    }
+
+
+
+    main .conteinerBtns a {
+
+        padding: .4rem 1rem;
+
+    }
+
 }
