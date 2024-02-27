@@ -184,11 +184,70 @@ main .conteinerBtns .btnDrive {
 
 
 
+/* SECTION TWO */
 
+.backgroundTwoSection {
+    background-image: url(https://digitalassets-secure.tesla.com/image/upload/f_auto,q_auto/xufyfcvqhmq36szytod7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    max-height: 100vh;
+    z-index: 16;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 2rem;
+}
 
+.backgroundTwoSection .conteinerBlack {
+    background-color: blue;
+}
 
+.backgroundTwoSection .conteinerBlack .titles {
+    text-align: center;
+    font-family: var(--fontTitulosParrafos);
+    color: #171A20;
+    font-size: 2.2rem;
+}
 
+.backgroundTwoSection .conteinerBlack .p {
+    text-align: center;
+    font-family: var(--fontTitulosParrafos);
+    color: #171A20;
+    font-weight: 400;
+}
 
+.backgroundTwoSection .conteinerBlack .conteinerBtns {
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 1rem;
+    height: 70%;
+}
+
+.backgroundTwoSection .conteinerBlack .conteinerBtns a {
+    text-decoration: none;
+    font-family: var(--fontTitulosParrafos);
+    padding: .5rem 2rem;
+    width: 13.6rem;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.backgroundTwoSection .conteinerBlack .conteinerBtns .btnShop {
+    background-color: #E1DAD9;
+    color: rgb(22, 19, 14);
+    font-weight: 200;
+    font-size: .8rem;
+}
+
+.backgroundTwoSection .conteinerBlack .conteinerBtns .btnDrive {
+    color: rgba(255, 255, 255, 0.89);
+    backdrop-filter: blur(var(--filter));
+    -webkit-backdrop-filter: blur(var(--filter));
+    font-size: .8rem;
+}
 
 
 
@@ -328,12 +387,25 @@ main .conteinerBtns .btnDrive {
 
     }
 
-    main .conteinerBtns {
+    .backgroundTwoSection {
+        padding: 0;
+    }
+
+
+    .backgroundTwoSection .conteinerBlack {
+        padding: 1rem 1rem;
+        width: 100%;
+        background-color: #171a2034;
+    }
+
+    main .conteinerBtns,
+    .backgroundTwoSection .conteinerBlack .conteinerBtns {
         align-content: end;
         flex-wrap: wrap;
     }
 
-    main .conteinerBtns a {
+    main .conteinerBtns a,
+    .backgroundTwoSection .conteinerBlack .conteinerBtns a {
         width: 100%;
         padding: .6rem 1rem;
     }
