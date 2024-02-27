@@ -266,7 +266,13 @@ main .conteinerBtns .btnDrive {
     z-index: 16;
     display: flex;
     justify-content: center;
-    padding: 2rem 2rem;
+
+}
+
+.backgroundThreeSection .conteinerBlack {
+    padding: 1rem 1rem;
+    width: 100%;
+    background-color: #171a2034;
 }
 
 .backgroundThreeSection .conteinerBlack .titles {
